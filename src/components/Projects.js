@@ -24,13 +24,10 @@ function Projects({ setIsActive }) {
       <div
         ref={ref}
         id="projects"
-        className="flex md:p-10 flex-col bg-[#161616]"
+        className="flex md:p-10 flex-col bg-[#161616] py-5"
       >
-        <div className="w-full flex justify-center pt-10 font-bold tracking-tight text-5xl text-white">
-          Projects
-        </div>
-        <div className="flex flex-col w-full justify-center min-h-screen mx-auto">
-          <div className="flex md:w-3/5 w-3/4 mx-auto flex-col text-white gap-10">
+        <div className="flex flex-col w-full justify-center min-h-min mx-auto">
+          <div className="flex md:w-3/5 w-3/4 mx-auto flex-col text-white gap-5">
             <div className="flex w-full flex-col md:flex-row justify-center p-5 bg-white bg-opacity-10 rounded-md">
               <div className="flex flex-col justify-center items-center w-full gap-2.5 md:gap-5">
                 <span className="text-sm md:text-lg"> Reddit Browser </span>
