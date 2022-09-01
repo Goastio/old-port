@@ -15,15 +15,15 @@ function Contact({ setIsActive }) {
   return (
     <>
       <section ref={ref} id="contact" class="bg-[#1e1e1e]">
-        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-sm">
-          <h2 class="mb-4 text-4xl tracking-tight font-bold text-center text-gray-900 dark:text-white">
+        <div class="py-10 lg:py-20 px-5 mx-auto max-w-screen-sm">
+          <h2 class="mb-5 text-4xl tracking-tight font-bold text-center text-gray-900 dark:text-white">
             Get in touch
           </h2>
-          <form action="#" class="space-y-8">
+          <form action="#" class="space-y-10">
             <div>
               <label
                 for="email"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                class="block mb-2 text-sm font-medium text-white"
               >
                 Your email
               </label>
@@ -38,7 +38,7 @@ function Contact({ setIsActive }) {
             <div>
               <label
                 for="subject"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                class="block mb-2 text-sm font-medium text-white"
               >
                 Subject
               </label>
@@ -53,7 +53,7 @@ function Contact({ setIsActive }) {
             <div class="sm:col-span-2">
               <label
                 for="message"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+                class="block mb-2 text-sm font-medium text-white"
               >
                 Your message
               </label>
@@ -66,7 +66,7 @@ function Contact({ setIsActive }) {
             </div>
             <button
               type="submit"
-              class="py-3 px-5 text-sm font-medium text-center text-white rounded-md sm:w-fit bg-white bg-opacity-10"
+              class="py-3 px-5 text-sm font-medium text-center text-white rounded-md sm:w-fit bg-white bg-opacity-10 hover:bg-opacity-5 transition"
             >
               Send message
             </button>
