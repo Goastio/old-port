@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 function Contact({ setIsActive }) {
   const { ref, inView } = useInView({
-    threshold: 0.5,
+    threshold: 0.1,
   });
 
   useEffect(() => {
@@ -14,12 +14,65 @@ function Contact({ setIsActive }) {
   }, [inView]);
   return (
     <>
-      <div
-        ref={ref}
-        id="contact"
-        className=""
-      >
-      </div>
+      <section ref={ref} id="contact" class="bg-[#1e1e1e]">
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-sm">
+          <h2 class="mb-4 text-4xl tracking-tight font-bold text-center text-gray-900 dark:text-white">
+            Get in touch
+          </h2>
+          <form action="#" class="space-y-8">
+            <div>
+              <label
+                for="email"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
+                Your email
+              </label>
+              <input
+                type="email"
+                id="email"
+                className="text-sm rounded-md w-full p-2.5 bg-white bg-opacity-10 hover:cursor-pointer dark:placeholder-neutral-500 focus:cursor-default text-white outline-hidden focus:outline outline-2 transition"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div>
+              <label
+                for="subject"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
+                Subject
+              </label>
+              <input
+                type="text"
+                id="subject"
+                className="text-sm rounded-md w-full p-2.5 bg-white bg-opacity-10 hover:cursor-pointer dark:placeholder-neutral-500 focus:cursor-default text-white outline-hidden focus:outline outline-2 transition"
+                placeholder="Subject"
+                required
+              />
+            </div>
+            <div class="sm:col-span-2">
+              <label
+                for="message"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+              >
+                Your message
+              </label>
+              <textarea
+                id="message"
+                rows="6"
+                class="text-sm rounded-md w-full p-2.5 bg-white bg-opacity-10 hover:cursor-pointer dark:placeholder-neutral-500 focus:cursor-default text-white outline-hidden focus:outline outline-2 transition"
+                placeholder="Leave a message..."
+              />
+            </div>
+            <button
+              type="submit"
+              class="py-3 px-5 text-sm font-medium text-center text-white rounded-md sm:w-fit bg-white bg-opacity-10"
+            >
+              Send message
+            </button>
+          </form>
+        </div>
+      </section>
     </>
   );
 }

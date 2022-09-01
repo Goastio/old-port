@@ -29,9 +29,9 @@ function Projects({ setIsActive }) {
         <div className="w-full flex justify-center pt-10 font-bold tracking-tight text-5xl text-white">
           Projects
         </div>
-        <div className="flex flex-col w-full min-h-screen mx-auto py-5 md:p-10">
-          <div className="flex w-3/4 mx-auto flex-col text-white gap-10">
-            <div className="flex w-full flex-col md:flex-row justify-center p-5 bg-white bg-opacity-10">
+        <div className="flex flex-col w-full justify-center min-h-screen mx-auto">
+          <div className="flex md:w-3/5 w-3/4 mx-auto flex-col text-white gap-10">
+            <div className="flex w-full flex-col md:flex-row justify-center p-5 bg-white bg-opacity-10 rounded-md">
               <div className="flex flex-col justify-center items-center w-full gap-2.5 md:gap-5">
                 <span className="text-sm md:text-lg"> Reddit Browser </span>
                 <div className="flex flex-col w-full items-center pb-5">
@@ -46,6 +46,8 @@ function Projects({ setIsActive }) {
                   <a
                     className="flex items-center gap-1 bg-white bg-opacity-10 hover:bg-opacity-5 transition p-2.5 rounded-md"
                     href="/reddit-browser"
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     <SiTeratail />
                     Live
@@ -63,7 +65,7 @@ function Projects({ setIsActive }) {
               </div>
 
               <div className="hover:scale-95 transition duration-100">
-                <a href="/reddit-browser">
+                <a href="/reddit-browser" target="_blank" rel="noreferrer">
                   <img
                     data-aos="fade-right"
                     src={redditapp}
@@ -74,7 +76,7 @@ function Projects({ setIsActive }) {
               </div>
             </div>
 
-            <div className="flex w-full flex-col md:flex-row justify-center p-5 bg-white bg-opacity-10">
+            <div className="flex w-full flex-col md:flex-row justify-center p-5 bg-white bg-opacity-10 rounded-md">
               <div className="flex flex-col justify-center items-center w-full gap-2.5 md:gap-5">
                 <span className="text-sm md:text-lg">Blackjack</span>
                 <div className="flex flex-col w-full items-center pb-5">
@@ -107,7 +109,7 @@ function Projects({ setIsActive }) {
               </div>
 
               <div className="hover:scale-95 transition duration-100">
-                <a href="/blackjack">
+                <a href="/blackjack" target="_blank" rel="noreferrer">
                   <img
                     data-aos="fade-right"
                     src={blackjack}
