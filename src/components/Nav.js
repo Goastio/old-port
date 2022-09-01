@@ -39,8 +39,8 @@ function Nav({ isActive, setIsActive }) {
 
   return (
     <>
-      <div className="flex p-5 fixed items-center w-full bg-[#1A1A1A] z-10 bg-opacity-95 shadow-md">
-        <div className="flex w-full font-sm gap-5 text-white justify-center md:justify-end">
+      <div className="flex p-2.5 md:p-5 fixed items-center w-full bg-[#1A1A1A] z-10 bg-opacity-95 shadow-md">
+        <div className="flex w-full gap-5 text-white justify-center md:justify-end">
           {navLinks.map((navLink) => {
             return (
               <Link
@@ -61,8 +61,8 @@ function Nav({ isActive, setIsActive }) {
                 to={navLink.url}
                 className={
                   isActive === navLink.linkText
-                    ? "text-[#0794E0] transition duration-300 text-xl"
-                    : "hover:text-[#0794E0] transition duration-300 text-xl"
+                    ? "text-[#0794E0] transition duration-300 md:text-xl text-base"
+                    : "hover:text-[#0794E0] transition duration-300 md:text-xl text-base"
                 }
               >
                 {navLink.linkText}

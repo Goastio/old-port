@@ -37,7 +37,7 @@ function About({ setIsActive }) {
         <div className="w-full pt-10 flex items-center justify-center font-bold tracking-tight text-5xl text-white">
           About
         </div>
-        <div className="flex flex-col min-h-screen md:w-2/3 w-full mx-auto justify-center">
+        <div className="flex flex-col min-h-screen lg:w-2/3 w-full mx-auto justify-center">
           <div className="flex md:flex-row flex-col w-full items-center text-white gap-10">
             <div className="flex flex-col bg-white bg-opacity-10 w-full rounded-md">
               <div className="flex justify-center p-5">
