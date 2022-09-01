@@ -39,8 +39,8 @@ function Nav({ isActive, setIsActive }) {
 
   return (
     <>
-      <div className="flex w-full p-5 bg-[#262626] z-10 bg-opacity-95 shadow-lg sticky top-0">
-        <div className="flex w-full justify-center items-center font-medium gap-5 text-white md:justify-end md:items-center">
+      <div className="flex p-5 fixed items-center w-full bg-[#1A1A1A] z-10 bg-opacity-95 shadow-md">
+        <div className="flex w-full font-sm gap-5 text-white justify-center md:justify-end">
           {navLinks.map((navLink) => {
             return (
               <Link

@@ -16,8 +16,8 @@ function App() {
       <BrowserRouter>
         <ScrollToTop />
         <Route exact path="/">
-          <Main isActive={isActive} setIsActive={setIsActive} />
           <Nav isActive={isActive} setIsActive={setIsActive} />
+          <Main isActive={isActive} setIsActive={setIsActive} />
           <About isActive={isActive} setIsActive={setIsActive} />
           <Projects isActive={isActive} setIsActive={setIsActive} />
           <Contact isActive={isActive} setIsActive={setIsActive} />
