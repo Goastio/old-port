@@ -9,7 +9,7 @@ AOS.init();
 
 function Projects({ setIsActive }) {
   const { ref, inView } = useInView({
-    threshold: 0.1,
+    threshold: 0.3,
   });
 
   useEffect(() => {
@@ -20,18 +20,26 @@ function Projects({ setIsActive }) {
 
   return (
     <>
-      <div ref={ref} id="projects" className="flex p-10 flex-col bg-[#1A1A1A]">
+      <div
+        ref={ref}
+        id="projects"
+        className="flex md:p-10 flex-col bg-[#1A1A1A]"
+      >
         <div className="w-full flex justify-center font-bold tracking-tight text-5xl text-white">
           Projects
         </div>
-        <div className="flex flex-col min-h-screen">
-          <div className="flex flex-col w-full text-white">
-            <div className="flex w-full justify-center">
-              <div
-                data-aos="fade-left"
-                className="flex items-center justify-center font-medium"
-              >
-                Reddit Browser
+        <div className="flex flex-col min-h-screen md:justify-center py-5 md:p-10">
+          <div className="flex w-full flex-col text-white">
+            <div className="flex w-full flex-col md:flex-row justify-center p-5 bg-white bg-opacity-10">
+              <div className="flex flex-col justify-center items-center w-full gap-5">
+                <span className="text-sm md:text-lg"> Reddit Browser </span>
+                <div className="flex flex-col w-full items-center">
+                  <span className="md:text-base text-xs">Developed using</span>
+                  <div className="flex">
+                    <span className="text-[#0794E0]">React</span> & 
+                    <span className="text-[#0794E0]">Tailwind</span>
+                  </div>
+                </div>
               </div>
               <div className="hover:scale-95 transition duration-100">
                 <a href="/reddit-browser">

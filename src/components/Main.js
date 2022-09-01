@@ -43,7 +43,7 @@ function Main({ isActive, setIsActive }) {
             data-aos-delay="150"
             className="text-center text-4xl font-thin"
           >
-            I'm a front-end web developer
+            I'm a front-end developer
           </div>
         </div>
         <div data-aos="fade-up" data-aos-delay="150" className="text-center py-5">
