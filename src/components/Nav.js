@@ -39,7 +39,7 @@ function Nav({ isActive, setIsActive }) {
 
   return (
     <>
-      <div className="p-5 w-full bg-[#262626] flex shadow-lg sticky z-10 top-0 md:opacity-95">
+      <div className="flex w-full p-5 bg-[#262626] z-10 bg-opacity-95 shadow-lg sticky top-0">
         <div className="flex w-full justify-center items-center font-medium gap-5 text-white md:justify-end md:items-center">
           {navLinks.map((navLink) => {
             return (

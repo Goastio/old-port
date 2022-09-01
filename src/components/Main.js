@@ -30,7 +30,7 @@ function Main({ isActive, setIsActive }) {
       <div
         ref={ref}
         id="home"
-        className="min-h-screen justify-center flex items-cente flex-col w-full bg-[#1A1A1A]"
+        className="min-h-screen justify-center flex  flex-col w-full bg-[#1A1A1A]"
       >
         <div
           data-aos="fade-right"
@@ -50,7 +50,7 @@ function Main({ isActive, setIsActive }) {
           <button
             onClick={scrollFunction}
             href="#_"
-            className="relative inline-flex items-center justify-start  overflow-hidden  transition-all bg-[#0794E0] rounded-sm hover:bg-[#1A1A1A] group"
+            className="relative inline-flex items-center justify-start transition-all bg-[#0794E0] rounded-sm hover:bg-[#1A1A1A] group"
           >
             <span className="absolute inset-0 border-0 group-hover:border-[25px] ease-linear duration-100 transition-all border-[#1A1A1A]"></span>
             <span className="relative w-full text-left text-[#1A1A1A] transition-colors duration-200 ease-in-out group-hover:text-[#0794E0] md:text-xl font-light px-2.5 py-1 rounded-md">
